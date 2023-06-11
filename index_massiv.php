@@ -131,7 +131,7 @@ function getPerfectPartner ($surname, $name, $patronomyc, $array) {
     $ArraynameShort = getShortName ($array[$temp]['fullname']);         
 
     $temp = rand(5000, 10000) / 100;                                     // процент совместимости - случайное число
-    if ($genderNew == 0) {echo "К сожалению, пол вводимого пользователя не удалось определить, введите ещё раз";
+    if ($genderNew == 0) {echo "К сожалению, пару не удалось подобрать, введите ещё раз";
     } elseif ($genderNew * $genderArray == -1) { 
         print_r ("$fullnameShort + ".$ArraynameShort." =\n") ;                  // вывод идеальной пары
         print_r (mb_chr(9825, 'UTF-8'). " Идеально на $temp % ". mb_chr(9825, 'UTF-8'));
